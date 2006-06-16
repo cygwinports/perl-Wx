@@ -1,0 +1,152 @@
+perl-Wx 
+------------------------------------------- 
+Perl bindings for wxGTK2 2.6.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  perl-5.8.7-5
+  wx26-2.6.3-1
+  wx26-gtk2-2.6.3-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.19-4
+  cygport-0.2.0-1
+  perl-5.8.7-5
+  wx-config-1-1
+
+Canonical homepage:
+  http://search.cpan.org/dist/Wx/
+
+Canonical download:
+  http://www.cpan.org/authors/id/M/MB/MBARBON/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Wx-0.27-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Wx-0.27-X.cygport all
+
+This will create:
+  /usr/src/perl-Wx-0.27-X-src.tar.bz2
+  /usr/src/perl-Wx-0.27-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/perl-Wx.sh
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Api.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/App.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/ArtProvider.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Calendar.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/DND.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/DateTime.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/DocView.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/DropSource.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Event.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/FS.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Grid.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Help.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Html.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Locale.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/MDI.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Menu.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Perl/Carp.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Perl/SplashFast.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Perl/TextValidator.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Print.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/RadioBox.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Region.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/STC.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Socket.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Timer.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Wx_Exp.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XRC.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Any_OS.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Any_wx_config.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/MacOSX_GCC.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Win32.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Win32_MSVC.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Win32_MinGW.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/gmake.mak
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/nmake.mak
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Any_OS.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Any_wx_config.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Core.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Hacks.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/MacOSX_GCC.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Win32.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Win32_MSVC.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Win32_MinGW.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Opt.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Options.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Utils.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/chkconfig.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/compat.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/constants.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/e_cback.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/event.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/helpers.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/overload.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/setup.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/streams.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/v_cback.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/wxapi.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/typemap
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/.packlist
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Calendar/Calendar.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Calendar/Calendar.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/DND/DND.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/DND/DND.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/DateTime/DateTime.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/DateTime/DateTime.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/DocView/DocView.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/DocView/DocView.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/FS/FS.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/FS/FS.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Grid/Grid.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Grid/Grid.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Help/Help.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Help/Help.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Html/Html.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Html/Html.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/MDI/MDI.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/MDI/MDI.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Print/Print.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Print/Print.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/STC/STC.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/STC/STC.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Socket/Socket.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Socket/Socket.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Wx.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Wx.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/XRC/XRC.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/XRC/XRC.dll
+  /usr/share/doc/Cygwin/perl-Wx-0.27.README
+  /usr/share/doc/perl-Wx-0.27/Changes
+  /usr/share/doc/perl-Wx-0.27/README.txt
+  /usr/share/man/man3/Wx.3pm.gz
+  /usr/share/man/man3/Wx.Api.3pm.gz
+  /usr/share/man/man3/build.Wx.build.Config.3pm.gz
+  /usr/share/man/man3/build.Wx.build.MakeMaker.3pm.gz
+  /usr/share/man/man3/build.Wx.build.Options.3pm.gz
+  /usr/share/man/man3/build.Wx.build.Utils.3pm.gz
+  /usr/share/perl/cygwin-pods/5.8/Wx.pod
+
+------------------
+
+Port Notes:
+
+----- version 0.27-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
