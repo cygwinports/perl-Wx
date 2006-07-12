@@ -1,19 +1,21 @@
 perl-Wx 
 ------------------------------------------- 
-Perl bindings for wxGTK2 2.6.
+Perl bindings for wxGTK 2.6.
 
 Runtime requirements:
-  cygwin-1.5.19-4
+  cygwin-1.5.20-1
   perl-5.8.7-5
+  perl-Alien-wxWidgets-0.18-1
   wx26-2.6.3-1
-  wx26-gtk2-2.6.3-1
+  wx26-gtk-2.6.3-1
 
 Build requirements:
-(besides corresponding devel packages)
-  cygwin-1.5.19-4
-  cygport-0.2.0-1
+  cygwin-1.5.20-1
+  cygport-0.2.2-1
+  make-3.80-1
   perl-5.8.7-5
-  wx-config-1-1
+  perl-Alien-wxWidgets-0.18-1
+  wx26-devel-2.6.3-1
 
 Canonical homepage:
   http://search.cpan.org/dist/Wx/
@@ -24,15 +26,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Wx-0.27-X-src.tar.bz2
+  unpack perl-Wx-0.53-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Wx-0.27-X.cygport all
+  cygport ./perl-Wx-0.53-X.cygport all
 
 This will create:
-  /usr/src/perl-Wx-0.27-X-src.tar.bz2
-  /usr/src/perl-Wx-0.27-X.tar.bz2
+  /usr/src/perl-Wx-0.53-X-src.tar.bz2
+  /usr/src/perl-Wx-0.53-X.tar.bz2
 
 -------------------------------------------
 
@@ -55,7 +57,9 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Html.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Locale.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/MDI.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Media.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Menu.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Mini.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Perl/Carp.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Perl/SplashFast.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Perl/TextValidator.pm
@@ -67,15 +71,6 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Timer.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Wx_Exp.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XRC.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Any_OS.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Any_wx_config.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/MacOSX_GCC.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Win32.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Win32_MSVC.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/Win32_MinGW.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/gmake.mak
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/Config/nmake.mak
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Any_OS.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Any_wx_config.pm
@@ -119,6 +114,8 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Html/Html.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/MDI/MDI.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/MDI/MDI.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Media/Media.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Media/Media.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Print/Print.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Print/Print.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/STC/STC.bs
@@ -129,12 +126,11 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Wx.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/XRC/XRC.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/XRC/XRC.dll
-  /usr/share/doc/Cygwin/perl-Wx-0.27.README
-  /usr/share/doc/perl-Wx-0.27/Changes
-  /usr/share/doc/perl-Wx-0.27/README.txt
+  /usr/share/doc/Cygwin/perl-Wx-0.53.README
+  /usr/share/doc/perl-Wx-0.53/Changes
+  /usr/share/doc/perl-Wx-0.53/README.txt
   /usr/share/man/man3/Wx.3pm.gz
   /usr/share/man/man3/Wx.Api.3pm.gz
-  /usr/share/man/man3/build.Wx.build.Config.3pm.gz
   /usr/share/man/man3/build.Wx.build.MakeMaker.3pm.gz
   /usr/share/man/man3/build.Wx.build.Options.3pm.gz
   /usr/share/man/man3/build.Wx.build.Utils.3pm.gz
@@ -143,6 +139,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.53-1 -----
+Major version bump.
 
 ----- version 0.27-1 -----
 Initial release for Cygwin.
