@@ -1,4 +1,4 @@
 category: Perl
-requires: cygwin perl perl-Alien-wxWidgets wx26 wx26-gtk
-sdesc: "Perl bindings for wxGTK 2.6"
-ldesc: "Perl bindings for wxGTK 2.6"
+requires: cygwin perl perl-Alien-wxWidgets wx28 wx28-gtk
+sdesc: "Perl bindings for wxGTK 2.8"
+ldesc: "Perl bindings for wxGTK 2.8"

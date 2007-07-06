@@ -1,21 +1,21 @@
 perl-Wx 
 ------------------------------------------- 
-Perl bindings for wxGTK 2.6.
+Perl bindings for wxGTK 2.8.
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.24-2
   perl-5.8.7-5
-  perl-Alien-wxWidgets-0.18-1
-  wx26-2.6.3-1
-  wx26-gtk-2.6.3-1
+  perl-Alien-wxWidgets-0.31-1
+  wx28-2.8.4-1
+  wx28-gtk2-2.8.4-1
 
 Build requirements:
-  cygwin-1.5.20-1
-  cygport-0.2.2-1
-  make-3.80-1
+  cygwin-1.5.24-2
+  cygport-0.3.1-1
+  make-3.81-1
   perl-5.8.7-5
-  perl-Alien-wxWidgets-0.18-1
-  wx26-devel-2.6.3-1
+  perl-Alien-wxWidgets-0.31-1
+  wx28-devel-2.8.4-1
 
 Canonical homepage:
   http://search.cpan.org/dist/Wx/
@@ -26,22 +26,25 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Wx-0.53-X-src.tar.bz2
+  unpack perl-Wx-0.74-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Wx-0.53-X.cygport all
+  cygport ./perl-Wx-0.74-X.cygport all
 
 This will create:
-  /usr/src/perl-Wx-0.53-X-src.tar.bz2
-  /usr/src/perl-Wx-0.53-X.tar.bz2
+  /usr/src/perl-Wx-0.74-X-src.tar.bz2
+  /usr/src/perl-Wx-0.74-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/perl-Wx.sh
+  /usr/bin/wx_overload.pl
+  /usr/bin/wx_xspp.pl
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/AUI.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Api.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/App.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/ArtProvider.pm
@@ -60,17 +63,27 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Media.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Menu.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Mini.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Overload/Driver.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Overload/Handle.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Perl/Carp.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Perl/SplashFast.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Perl/TextValidator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Print.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/RadioBox.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Region.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/RichText.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/STC.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Socket.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Thread.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Timer.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/Wx_Exp.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XRC.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XSP/Driver.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XSP/Grammar.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XSP/Node.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XSP/Parser.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XSP/Typemap.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XSP/XSP.yp
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/XSP/XSpp.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Any_OS.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/build/MakeMaker/Any_wx_config.pm
@@ -96,6 +109,8 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/cpp/wxapi.h
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Wx/typemap
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/.packlist
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/AUI/AUI.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/AUI/AUI.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Calendar/Calendar.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Calendar/Calendar.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/DND/DND.bs
@@ -118,6 +133,8 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Media/Media.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Print/Print.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Print/Print.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/RichText/RichText.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/RichText/RichText.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/STC/STC.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/STC/STC.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Socket/Socket.bs
@@ -126,11 +143,17 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/Wx.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/XRC/XRC.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Wx/XRC/XRC.dll
-  /usr/share/doc/Cygwin/perl-Wx-0.53.README
-  /usr/share/doc/perl-Wx-0.53/Changes
-  /usr/share/doc/perl-Wx-0.53/README.txt
+  /usr/share/doc/Cygwin/perl-Wx-0.74.README
+  /usr/share/doc/perl-Wx-0.74/Changes
+  /usr/share/doc/perl-Wx-0.74/README.txt
+  /usr/share/man/man1/wx_xspp.pl.1.gz
   /usr/share/man/man3/Wx.3pm.gz
   /usr/share/man/man3/Wx.Api.3pm.gz
+  /usr/share/man/man3/Wx.Thread.3pm.gz
+  /usr/share/man/man3/build.Wx.XSP.Node.3pm.gz
+  /usr/share/man/man3/build.Wx.XSP.Parser.3pm.gz
+  /usr/share/man/man3/build.Wx.XSP.Typemap.3pm.gz
+  /usr/share/man/man3/build.Wx.XSP.XSpp.3pm.gz
   /usr/share/man/man3/build.Wx.build.MakeMaker.3pm.gz
   /usr/share/man/man3/build.Wx.build.Options.3pm.gz
   /usr/share/man/man3/build.Wx.build.Utils.3pm.gz
@@ -139,6 +162,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.74-1 -----
+Version bump for wx-2.8.
 
 ----- version 0.53-1 -----
 Major version bump.
