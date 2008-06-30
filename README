@@ -3,17 +3,17 @@ perl-Wx
 Perl bindings for wxGTK 2.8.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  perl-5.10.0-3
-  perl-Alien-wxWidgets-0.36-1
-  wx28-base-2.8.7-1
-  wx28-gtk2-2.8.7-1
+  cygwin-1.5.25-15
+  perl-5.10.0-4
+  perl-Alien-wxWidgets-0.37-1
+  wx28-base-2.8.8.0-1
+  wx28-gtk2-2.8.8.0-1
 
 Additional build requirements:
-  binutils-20060817-1
-  cygport-0.3.10-1
+  binutils-20080523-1
+  cygport-0.3.11-1
   make-3.81-1
-  wx28-devel-2.8.7-1
+  wx28-devel-2.8.8.0-1
 
 Canonical homepage:
   http://search.cpan.org/dist/Wx/
@@ -24,15 +24,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Wx-0.83-X-src.tar.bz2
+  unpack perl-Wx-0.84-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Wx-0.83-X.cygport all
+  cygport ./perl-Wx-0.84-X.cygport all
 
 This will create:
-  /usr/src/perl-Wx-0.83-X-src.tar.bz2
-  /usr/src/perl-Wx-0.83-X.tar.bz2
+  /usr/src/perl-Wx-0.84-X-src.tar.bz2
+  /usr/src/perl-Wx-0.84-X.tar.bz2
 
 -------------------------------------------
 
@@ -124,8 +124,8 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Socket/Socket.dll
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Wx.dll
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/XRC/XRC.dll
-  /usr/share/doc/perl-Wx-0.83/Changes
-  /usr/share/doc/perl-Wx-0.83/README.txt
+  /usr/share/doc/perl-Wx-0.84/Changes
+  /usr/share/doc/perl-Wx-0.84/README.txt
   /usr/share/man/man1/wx_xspp.pl.1.gz
   /usr/share/man/man3/Wx.3pm.gz
   /usr/share/man/man3/Wx.Api.3pm.gz
@@ -142,6 +142,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.84-1 -----
+Version bump.
 
 ----- version 0.83-1 -----
 Version bump.
