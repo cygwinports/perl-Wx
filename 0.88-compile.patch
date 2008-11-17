@@ -1,0 +1,11 @@
+--- origsrc/Wx-0.86/cpp/helpers.h	2008-08-31 10:49:17.000000000 -0500
++++ src/Wx-0.86/cpp/helpers.h	2008-09-24 01:46:06.578032800 -0500
+@@ -444,7 +444,7 @@
+ }
+ 
+ #define WXPLI_BOOT_ONCE( name ) WXPLI_BOOT_ONCE_( name, XS )
+-#if defined(WIN32) || defined(__CYGWIN__)
++#if defined(WIN32)
+ #  define WXPLI_BOOT_ONCE_EXP( name ) WXPLI_BOOT_ONCE_( name, WXXS )
+ #else
+ #  define WXPLI_BOOT_ONCE_EXP WXPLI_BOOT_ONCE

@@ -3,4 +3,4 @@ WX_VERSION=2.8
 WX_TOOLKIT=gtk2
 inherit perl wxwidgets
 
-PATCH_URI="0.86-compile.patch"
+PATCH_URI="0.88-compile.patch"
