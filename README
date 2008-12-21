@@ -24,15 +24,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Wx-0.88-X-src.tar.bz2
+  unpack perl-Wx-0.89-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Wx-0.88-X.cygport all
+  cygport ./perl-Wx-0.89-X.cygport all
 
 This will create:
-  /usr/src/perl-Wx-0.88-X-src.tar.bz2
-  /usr/src/perl-Wx-0.88-X.tar.bz2
+  /usr/src/perl-Wx-0.89-X-src.tar.bz2
+  /usr/src/perl-Wx-0.89-X.tar.bz2
 
 -------------------------------------------
 
@@ -124,8 +124,8 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Socket/Socket.dll
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Wx.dll
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/XRC/XRC.dll
-  /usr/share/doc/perl-Wx-0.88/Changes
-  /usr/share/doc/perl-Wx-0.88/README.txt
+  /usr/share/doc/perl-Wx-0.89/Changes
+  /usr/share/doc/perl-Wx-0.89/README.txt
   /usr/share/man/man1/wx_xspp.pl.1.gz
   /usr/share/man/man3/Wx.3pm.gz
   /usr/share/man/man3/Wx.Api.3pm.gz
@@ -142,6 +142,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.89-1 -----
+Version bump.
 
 ----- version 0.88-1 -----
 Version bump.
