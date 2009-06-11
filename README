@@ -3,11 +3,11 @@ perl-Wx
 Perl bindings for wxGTK 2.8.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-48
   libgcc1-4.3.2-2
   libstdc++6-4.3.2-2
-  libwx_baseu2.8_0-2.8.9.2-10
-  libwx_gtk2u2.8_0-2.8.9.2-10
+  libwx_baseu2.8_0-2.8.10.1-1
+  libwx_gtk2u2.8_0-2.8.10.1-1
   perl-5.10.0-5
   perl-Alien-wxWidgets-0.42-10
 
@@ -26,15 +26,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Wx-0.89-X-src.tar.bz2
+  unpack perl-Wx-0.91-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Wx-0.89-X.cygport all
+  cygport ./perl-Wx-0.91-X.cygport all
 
 This will create:
-  /usr/src/perl-Wx-0.89-X-src.tar.bz2
-  /usr/src/perl-Wx-0.89-X.tar.bz2
+  /usr/src/perl-Wx-0.91-X-src.tar.bz2
+  /usr/src/perl-Wx-0.91-X.tar.bz2
 
 -------------------------------------------
 
@@ -144,6 +144,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.91-1 -----
+Version bump.
 
 ----- version 0.89-10 -----
 Initial release for Cygwin 1.7.
