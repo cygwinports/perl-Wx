@@ -3,19 +3,20 @@ perl-Wx
 Perl bindings for wxGTK 2.8.
 
 Runtime requirements:
-  cygwin-1.7.0-48
+  cygwin-1.7.0-61
   libgcc1-4.3.2-2
   libstdc++6-4.3.2-2
   libwx_baseu2.8_0-2.8.10.1-1
   libwx_gtk2u2.8_0-2.8.10.1-1
   perl-5.10.0-5
-  perl-Alien-wxWidgets-0.42-10
 
 Build requirements:
 (besides corresponding devel packages)
-  binutils-20080624-2
-  cygport-0.9.6-1
+  binutils-2.19.51-1
+  cygport-0.9.9-1
   make-3.81-2
+  perl-Alien-wxWidgets-0.44-1
+  perl-ExtUtils-XSpp-0.05-1
 
 Canonical homepage:
   http://search.cpan.org/dist/Wx/
@@ -26,124 +27,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Wx-0.91-X-src.tar.bz2
+  unpack perl-Wx-0.92-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Wx-0.91-X.cygport all
+  cygport ./perl-Wx-0.92-X.cygport all
 
 This will create:
-  /usr/src/perl-Wx-0.91-X-src.tar.bz2
-  /usr/src/perl-Wx-0.91-X.tar.bz2
+  /usr/src/perl-Wx-0.92-X-src.tar.bz2
+  /usr/src/perl-Wx-0.92-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/wx_overload.pl
-  /usr/bin/wx_xspp.pl
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/AUI.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Api.pod
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/App.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/ArtProvider.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Calendar.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/DND.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/DateTime.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/DocView.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/DropSource.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Event.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/FS.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Grid.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Help.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Html.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Locale.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/MDI.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Media.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Menu.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Mini.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Overload/Driver.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Overload/Handle.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Perl/Carp.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Perl/SplashFast.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Perl/TextValidator.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Print.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/RadioBox.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/RichText.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/STC.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Socket.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Thread.pod
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Timer.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/Wx_Exp.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/XRC.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/XSP/Driver.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/XSP/Grammar.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/XSP/Node.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/XSP/Parser.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/XSP/Typemap.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/XSP/XSP.yp
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/XSP/XSpp.pod
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/MakeMaker.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/MakeMaker/Any_OS.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/MakeMaker/Any_wx_config.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/MakeMaker/Core.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/MakeMaker/Hacks.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/MakeMaker/MacOSX_GCC.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/MakeMaker/Win32.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/MakeMaker/Win32_MSVC.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/MakeMaker/Win32_MinGW.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/Opt.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/Options.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/build/Utils.pm
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/chkconfig.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/compat.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/constants.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/e_cback.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/event.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/helpers.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/overload.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/setup.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/streams.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/v_cback.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/v_cback_def.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/cpp/wxapi.h
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Wx/typemap
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/.packlist
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/AUI/AUI.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Calendar/Calendar.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/DND/DND.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/DateTime/DateTime.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/DocView/DocView.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/FS/FS.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Grid/Grid.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Help/Help.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Html/Html.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/MDI/MDI.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Media/Media.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Print/Print.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/RichText/RichText.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/STC/STC.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Socket/Socket.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/Wx.dll
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Wx/XRC/XRC.dll
-  /usr/share/doc/perl-Wx/Changes
-  /usr/share/doc/perl-Wx/README.txt
-  /usr/share/man/man1/wx_xspp.pl.1.gz
-  /usr/share/man/man3/Wx.3pm.gz
-  /usr/share/man/man3/Wx.Api.3pm.gz
-  /usr/share/man/man3/Wx.Thread.3pm.gz
-  /usr/share/man/man3/build.Wx.XSP.Node.3pm.gz
-  /usr/share/man/man3/build.Wx.XSP.Parser.3pm.gz
-  /usr/share/man/man3/build.Wx.XSP.Typemap.3pm.gz
-  /usr/share/man/man3/build.Wx.XSP.XSpp.3pm.gz
-  /usr/share/man/man3/build.Wx.build.MakeMaker.3pm.gz
-  /usr/share/man/man3/build.Wx.build.MakeMaker.Win32_MSVC.3pm.gz
-  /usr/share/man/man3/build.Wx.build.Options.3pm.gz
-  /usr/share/man/man3/build.Wx.build.Utils.3pm.gz
-
-------------------
-
 Port Notes:
+
+----- version 0.92-1 -----
+Version bump.
 
 ----- version 0.91-1 -----
 Version bump.
