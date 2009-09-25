@@ -27,21 +27,21 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Wx-0.92-X-src.tar.bz2
+  unpack perl-Wx-0.93-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Wx-0.92-X.cygport all
+  cygport ./perl-Wx-0.93-X.cygport all
 
 This will create:
-  /usr/src/perl-Wx-0.92-X-src.tar.bz2
-  /usr/src/perl-Wx-0.92-X.tar.bz2
+  /usr/src/perl-Wx-0.93-X-src.tar.bz2
+  /usr/src/perl-Wx-0.93-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
 
------ version 0.92-1 -----
+----- version 0.93-1 -----
 Version bump.
 
 ----- version 0.91-1 -----
