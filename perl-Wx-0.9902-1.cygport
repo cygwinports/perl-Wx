@@ -1,6 +1,8 @@
-CPAN_AUTHOR=mbarbon
+CPAN_AUTHOR=mdootson
 WX_VERSION=2.8
 WX_TOOLKIT=gtk2
 inherit perl wxwidgets
 
 PATCH_URI="0.88-compile.patch"
+
+DEPEND="perl(Alien::wxWidgets) perl(ExtUtils::XSpp)"
