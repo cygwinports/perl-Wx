@@ -4,7 +4,7 @@ WX_TOOLKIT=gtk2
 inherit perl wxwidgets
 
 NAME="perl-Wx"
-VERSION=0.9914
+VERSION=0.9915
 RELEASE=1
 SUMMARY="Perl bindings for wxGTK 2.8"
 
