@@ -4,12 +4,15 @@ WX_TOOLKIT=gtk2
 inherit perl wxwidgets
 
 NAME="perl-Wx"
-VERSION=0.9928
+VERSION=0.9932
 RELEASE=1
 CATEGORY="Perl"
-SUMMARY="Perl bindings for wxGTK 2.8"
+SUMMARY="Perl bindings for wxGTK"
 
-PATCH_URI="0.88-compile.patch"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/rpms/perl-Wx.git/plain/Wx-0.9932-Undefine-BOM_UTF8.patch
+	0.88-compile.patch
+"
 
 DEPEND="perl(Alien::wxWidgets) perl(ExtUtils::XSpp)"
 
@@ -18,3 +21,9 @@ perl_Wx_CONTENTS="--exclude=*build* --exclude=cpp --exclude=*verload* --exclude=
 perl_Wx_build_CONTENTS="usr/bin/wxperl_overload ${PERL_VENDORARCH#/}/Wx/Overload/
 	${PERL_VENDORARCH#/}/Wx/XSP/ ${PERL_VENDORARCH#/}/Wx/build/ ${PERL_VENDORARCH#/}/Wx/cpp/
 	usr/share/man/man1/*overload* usr/share/man/man3/*build*"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	perl_compile --wx-version=${WX_VERSION} --wx-toolkit=${WX_TOOLKIT} --wx-unicode
+}
